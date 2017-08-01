@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"-->
+    <!--content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="dz"/>
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/productCenter.css">
+    <title>产品中心</title>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="header-nav">
+        <div class="header-content  clearFloat">
+            <div class="header-logo">
+                <a href="index.html"></a>
+            </div>
+            <ul id="navBox">
+                <li class="noShowProduct"><a href="index.html">首页</a></li>
+                <li id="showProduct"><a href="productCenter.html" class="active">产品中心</a></li>
+                <li class="noShowProduct"><a href="case.html">应用案例</a></li>
+                <li class="noShowProduct"><a href="newsCenter.html">新闻中心</a></li>
+                <li class="noShowProduct"><a href="aboutUs.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-nav header-height" id="productNav">
+        <div class="product-nav-content">
+            <ul class="product-main" id="product-main">
+                <!--<li class="product-box">-->
+                <!--<div class="product-pic" style='background:url("../images/nav_menu_icon01.png")'></div>-->
+                <!--<div class="product-title">集成装备</div>-->
+                <!--</li>-->
+                <!--<li class="product-box">-->
+                <!--<div class="product-pic" style='background:url("../images/nav_menu_icon02.png")'></div>-->
+                <!--<div class="product-title">车载装备</div>-->
+                <!--</li>-->
+            </ul>
+            <div class="product-main-mode" id="productMode">
+                <img src="../images/nav_menu_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--概况介绍-->
+    <div class="survey">
+        <div class="survey-content" id="surveyContent">
+
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <div class="footer-content" id="footerContent">
+
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.8.0.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+    var k;
+    var productMain = [
+        {
+            imgSrc: '../images/nav_menu_icon01.png',
+            title: '集成装备'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon02.png',
+            title: '车载装备'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon03.png',
+            title: '智能图像'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon04.png',
+            title: '反制装备'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon05.png',
+            title: '情报信息'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon06.png',
+            title: '信息安全'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon07.png',
+            title: '特种侦察'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon08.png',
+            title: '指挥调度'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon09.png',
+            title: '单警装备'
+        },
+        {
+            imgSrc: '../images/nav_menu_icon10.png',
+            title: '家居安防'
+        }
+    ];
+
+
+    for (var i = 0; i < productMain.length; i++) {
+        $('#product-main').prepend('' +
+            '<li class="product-box">' +
+            '<div class="product-pic" style="background:url(' + productMain[i].imgSrc + ')"></div>' +
+            '<div class="product-title">' + productMain[i].title + '</div>' +
+            '</li>');
+    }
+
+
+    var productList = $('#product-main').children('li');//获取总的分类
+    var productNumber = $('#product-main').children('li').length;//获取总的分类个数
+
+
+    $('#navBox .noShowProduct').hover(function () {
+        productNavMoveOut()
+    }, function () {
+        productNavMoveOut()
+    });
+
+    //    移入产品中心方案1
+    //    $('#showProduct').hover(function () {
+    //        $('#productNav').stop(true, false).animate({height: "123"}, 100);
+    //        $('#product-main').stop(true, false).animate({left: '0'}, 3000);
+    //        for (var k = (productNumber - 1); k >= 0; k--) {
+    //            $(productList[k]).delay(200 * (productNumber - 1 - k)).animate({opacity: "1",marginLeft:"50"}, 500);
+    //        }
+    //    }, function () {
+    //
+    //    });
+
+    //        移入产品中心方案2
+    $('#showProduct').hover(function () {
+        for (var k = (productNumber - 1); k >= 0; k--) {
+            $(productList[k]).delay(50 * (productNumber - 1 - k)).css({ right:k*80});
+        }
+        $('#productNav').stop(true, false).animate({height: "123px"}, 100);
+        $('#product-main').stop(true, false).animate({left: '0'}, 3000);
+        $('#productMode').stop(true, false).animate({left: '1200'}, 3000);
+        for (var j = (productNumber - 1); j >= 0; j--) {
+            $(productList[j]).delay(50 * (productNumber - 1 - j)).animate({ right:j*120}, 3000);
+        }
+    }, function () {
+
+    });
+
+    //移出产品分类导航
+    var productNavMoveOut = function () {
+        $('#productNav').stop(true, false).animate({height: "0"}, 100);
+        $("#productNav li").stop(true, true).css({right: "0px"});
+        $('#product-main').stop(true, true).css({left: '600px'});
+        $('#productMode').stop(true, false).animate({left: '600px'}, 0);
+    };
+
+    $('#productNav').hover(function () {
+
+    }, function () {
+        productNavMoveOut()
+    });
+
+    //    产品分类内部移动效果
+    $(".product-box").hover(function (event) {
+        $(this).find('.product-pic').stop(true, false).animate({"backgroundPositionY": "-34px"}, 300)
+    }, function () {
+        $(this).find('.product-pic').stop(true, false).animate({"backgroundPositionY": "0"}, 300)
+    });
+</script>
+</body>
+</html>

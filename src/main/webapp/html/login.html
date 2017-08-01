@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div class="mainBox2">
+    <div class="login">
+        <div id="data">
+        </div>
+        <div class="loginBox textCenter">
+            <div class="formBox">
+                <div class="displayIB width100">用户名</div>
+                <input type="text" id="userName" placeholder="请输入用户名">
+            </div>
+            <div class="formBox">
+                <div class="displayIB width100">密码</div>
+                <input type="password" id="password" placeholder="请输入密码">
+            </div>
+            <button class="btn-blue" onclick="login()">
+                登录
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script>
+    function login() {
+        var userName = $("#userName").val();
+        var password = $("#password").val();
+        $.ajax({
+            url: "/user/login",
+            type: "post",
+            dataType: "json",
+            scriptCharset: 'utf-8',
+            data: {
+                userName: userName,
+                password: password
+            },
+            success: function (data) {
+                console.log(data);
+                $("#data").html(JSON.stringify(data));
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+            }
+        });
+    }
+</script>
+</html>

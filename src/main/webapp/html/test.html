@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<style type="text/css">
+    div{
+        border: 1px solid #000000;
+        background-color:#ffffff;
+        height:200px;
+        width:300px;
+    }
+</style>
+<body onload="starts()">
+<div id="myDiv1" style="display:block">div1</div>
+<div id="myDiv2" style="display:none">div2</div>
+<div id="myDiv3" style="display:none">div3</div>
+<div id="myDiv4" style="display:none">div4</div>
+<div id="myDiv5" style="display:none">div5</div>
+</body>
+<script language="javascript">
+    var num = 1;//默认显示第一个div
+    var times = 2000;//两秒切换一次
+    function starts(){
+        for(var i=1;i<6;i++){
+            var divObj = document.getElementById("myDiv"+i);
+            if(i==num){
+                divObj.style.display = "block";
+            }else{
+//                divObj.style.display = "none";
+            }
+        }
+        num ++;
+        if(num ==6)num=1;//循环结束后重新指向第一个div
+        setTimeout('starts()',times);//每隔两秒调用starts()方法
+    }
+</script>
+</html>

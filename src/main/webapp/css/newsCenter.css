@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.banner {
+  background: #f1f2f4; }
+  .banner .banner-content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .banner .banner-content .tab {
+      position: absolute;
+      bottom: 0;
+      width: 1200px;
+      height: 48px;
+      line-height: 48px;
+      background-color: #1f1f1f; }
+      .banner .banner-content .tab .tabBox {
+        width: 200px;
+        color: #ffffff;
+        float: left;
+        text-align: center;
+        cursor: pointer; }
+        .banner .banner-content .tab .tabBox.active, .banner .banner-content .tab .tabBox:hover {
+          background-color: white;
+          color: #333333; }
+
+.tab-main {
+  background-color: #ffffff;
+  padding-bottom: 160px; }
+  .tab-main .tab-content {
+    width: 1200px;
+    margin: 0 auto; }
+    .tab-main .tab-content .choose-time {
+      padding: 25px 0;
+      text-align: right; }
+      .tab-main .tab-content .choose-time .select-box {
+        text-align: right;
+        position: relative;
+        vertical-align: middle;
+        float: right;
+        margin-left: 15px;
+        cursor: pointer; }
+        .tab-main .tab-content .choose-time .select-box .select-show {
+          height: 32px;
+          line-height: 32px;
+          border: 1px solid #d2d2d2;
+          color: #999999;
+          font-size: 14px;
+          text-align: left;
+          padding-left: 15px;
+          background: url("../images/news_arrow_down.png") no-repeat scroll right center; }
+        .tab-main .tab-content .choose-time .select-box .choose-years {
+          width: 101px; }
+        .tab-main .tab-content .choose-time .select-box .choose-months {
+          width: 80px; }
+        .tab-main .tab-content .choose-time .select-box .choose-box {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          border: 1px solid #d2d2d2;
+          border-top: none;
+          z-index: 3;
+          background-color: white;
+          display: none; }
+          .tab-main .tab-content .choose-time .select-box .choose-box div {
+            color: #999999;
+            font-size: 14px;
+            padding: 5px 0; }
+            .tab-main .tab-content .choose-time .select-box .choose-box div:hover {
+              background-color: #1a56c3;
+              color: #ffffff; }
+    .tab-main .tab-content .tab-content-box {
+      background-color: #f2f4f7; }
+      .tab-main .tab-content .tab-content-box .tabBox-content {
+        display: none; }
+        .tab-main .tab-content .tab-content-box .tabBox-content.tab1 {
+          display: block; }
+          .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box {
+            width: 600px;
+            float: left; }
+            .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message {
+              width: 300px;
+              height: 320px;
+              overflow: hidden;
+              position: relative;
+              float: left; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .pic {
+                width: 100%;
+                height: 100%;
+                text-align: center; }
+                .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .pic img {
+                  vertical-align: middle; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .text {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #1a56c3;
+                line-height: 20px;
+                cursor: pointer;
+                filter: alpha(opacity=0);
+                /* IE */
+                -moz-opacity: 0;
+                /* 老版Mozilla */
+                -khtml-opacity: 0;
+                /* 老版Safari */
+                opacity: 0;
+                /* 支持opacity的浏览器*/
+                transition: all 1s;
+                -moz-transition: all 1s;
+                /* Firefox 4 */
+                -webkit-transition: all 1s;
+                /* Safari 和 Chrome */
+                -o-transition: all 1s;
+                /* Opera */ }
+                .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .text:hover {
+                  filter: alpha(opacity=100);
+                  /* IE */
+                  -moz-opacity: 1;
+                  /* 老版Mozilla */
+                  -khtml-opacity: 1;
+                  /* 老版Safari */
+                  opacity: 1;
+                  /* 支持opacity的浏览器*/
+                  top: 0px; }
+                .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .text:hover .text-content {
+                  top: 0px; }
+                .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-message .text .text-content {
+                  position: absolute;
+                  padding: 70px 20px;
+                  top: -320px;
+                  font-size: 14px;
+                  color: #ffffff;
+                  transition: all .5s;
+                  -moz-transition: all .5s;
+                  /* Firefox 4 */
+                  -webkit-transition: all .5s;
+                  /* Safari 和 Chrome */
+                  -o-transition: all .5s;
+                  /* Opera */ }
+            .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title {
+              position: relative;
+              float: left;
+              width: 300px;
+              height: 320px;
+              padding: 20px; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .tab1-titleText {
+                font-size: 16px;
+                color: #333333; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .tab1-titleTime .time-day {
+                font-size: 68px;
+                font-family: GABRIOLA;
+                color: #0f43a2; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .tab1-titleTime .time-Ym {
+                font-size: 16px;
+                color: #1a56c3; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .SJ {
+                width: 14px;
+                height: 26px;
+                position: absolute;
+                top: 50%;
+                margin-top: -13px;
+                z-index: 2; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .leftSJ {
+                background: url("../images/news_sanjiao.png") no-repeat left;
+                left: -14px; }
+              .tab-main .tab-content .tab-content-box .tabBox-content.tab1 .tab1-box .tab1-title .rightSJ {
+                background: url("../images/news_sanjiao.png") no-repeat right;
+                right: -14px; }
+
+/*# sourceMappingURL=newsCenter.css.map */

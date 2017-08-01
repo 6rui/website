@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="dz"/>
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/newsCenter.css">
+    <title>新闻中心</title>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="header-nav">
+        <div class="header-content  clearFloat">
+            <div class="header-logo">
+                <a href="index.html"></a>
+            </div>
+            <ul id="navBox">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="productDetail.html">产品中心</a></li>
+                <li><a href="case.html">应用案例</a></li>
+                <li><a href="newsCenter.html" class="active">新闻中心</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-content positionR">
+            <img src="../images/inner_img_bg01.png" alt="">
+            <div class="banner-title">
+                <div class="chinese">新闻中心</div>
+                <div class="borderLine"></div>
+                <div class="english">News</div>
+            </div>
+            <div class="tab">
+                <div class="tabBox active">公司新闻</div>
+                <div class="tabBox">媒体报道</div>
+                <div class="tabBox">行业资讯</div>
+            </div>
+        </div>
+    </div>
+    <!--选项卡内容-->
+    <div class="tab-main">
+        <div class="tab-content">
+            <div class="choose-time clearFloat">
+                <div class="select-box">
+                    <div class="select-show choose-months" id="select-months" onclick="selectMonths()">12月</div>
+                    <div class="choose-box months-box" id="monthsBox">
+                        <div>01月</div>
+                        <div>02月</div>
+                        <div>03月</div>
+                        <div>04月</div>
+                        <div>05月</div>
+                        <div>06月</div>
+                        <div>07月</div>
+                        <div>08月</div>
+                        <div>09月</div>
+                        <div>10月</div>
+                        <div>11月</div>
+                        <div>12月</div>
+                    </div>
+                </div>
+                <div class="select-box">
+                    <div class="select-show choose-years" id="select-years" onclick="selectYears()">2017年</div>
+                    <div class="choose-box years-box" id="yearsBox">
+                        <div>2017年</div>
+                        <div>2016年</div>
+                        <div>2015年</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-box">
+                <div class="tabBox-content clearFloat tab1" id="tab1">
+                    <!--<div class="tab1-box">-->
+                        <!--<div class="tab1-title">-->
+                            <!--<div class="SJ rightSJ"></div>-->
+                            <!--<div class="tab1-titleTime">-->
+                                <!--<span class="time-day">11</span>-->
+                                <!--<span class="time-Ym">2017.12</span>-->
+                            <!--</div>-->
+                            <!--<div class="tab1-titleText">-->
+                                <!--中国一汽——电子科技汽车人工智能实验室揭牌成立-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tab1-message">-->
+                            <!--<div class="pic">-->
+                                <!--<img src="../images/news_img.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="text">-->
+                                <!--<div class="text-content">-->
+                                    <!--2017年6月3日，中国一汽——电子科大-->
+                                    <!--汽车人工智能联合实验室暨智能网联创新-->
+                                    <!--实验室揭牌仪式与学术报告会在清水河校-->
+                                    <!--区举行。中国一汽集团公司副总工程师、-->
+                                    <!--技术中心主任、中国工程院院士李骏，启-->
+                                    <!--明信息技术股份有限公司总经理吴建会，-->
+                                    <!--东风汽车公司技术中心首席工程师陈赣，-->
+                                    <!--电子科大校长李言荣出席仪式。副校长杨-->
+                                    <!--晓波主持仪式。-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="tabBox-content tab2">
+                    2
+                </div>
+                <div class="tabBox-content tab3">
+                    3
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--概况介绍-->
+    <div class="survey">
+        <div class="survey-content" id="surveyContent">
+
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <div class="footer-content" id="footerContent">
+
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.8.0.min.js"></script>
+<script src="../dist/swiper/js/swiper.js"></script>
+<script src="../js/common.js"></script>
+<script>
+
+
+    $(function () {
+        var $tabBox = $(".tab .tabBox");
+        $tabBox.click(function () {       //定义了$tabBox对应的单击事件，也就是类别的单击事件。
+            $(this).addClass("active").siblings().removeClass("active");
+            var index = $tabBox.index(this);
+            $(".tab-content-box .tabBox-content").eq(index).show().siblings().hide();
+        });
+    });
+
+
+    var newsList = [
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-01-01",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-01-11",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-11-01",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-11-13",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-01-03",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-01-01",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽一汽电子科技汽车人工智能实验室揭牌成立",
+            titleTime: "2017-01-01",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽2017年6月3日，中国一汽——电子科大汽"
+        },
+        {
+            titleText: "中国一汽——电子科技",
+            titleTime: "2017-01-02",
+            picSrc: '../images/news_img.png',
+            textContent: "2017年6月3日，中国一汽——电子科大汽 2017年6月3日，中国一汽——电子科大汽 2017年6月3日，中国一汽——电子科大汽"
+        }
+    ];
+
+
+    for(var i=0;i<newsList.length;i++){
+        var maxString=175;//最大字数
+        var timeSplit = newsList[i].titleTime.split('-');
+        var maxTextContent;
+        if(newsList[i].textContent.length>=maxString){
+            maxTextContent=newsList[i].textContent.substring(0,maxString)+"..."
+        }else {
+            maxTextContent=newsList[i].textContent;
+        }
+
+        if((i+1)%4==1||(i+1)%4==2){
+            $("#tab1").append('<div class="tab1-box">'+
+                '<div class="tab1-message">'+
+                '<div class="pic">'+
+                '<img src="'+newsList[i].picSrc+'" alt="">'+
+                '</div>'+
+                '<div class="text">'+
+                '<div class="text-content">'+maxTextContent+'' +
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '<div class="tab1-title">'+
+                '<div class="SJ leftSJ"></div>'+
+                '<div class="tab1-titleTime"><span class="time-day">'+timeSplit[2]+'</span><span class="time-Ym">'+timeSplit[0]+'.'+timeSplit[1]+'</span>' +
+                '</div>'+
+                '<div class="tab1-titleText">'+newsList[i].titleText+'' +
+                '</div>'+
+                '</div>'+
+                '</div>')
+        }else {
+            $("#tab1").append('<div class="tab1-box">'+
+                '<div class="tab1-title">'+
+                '<div class="SJ rightSJ"></div>'+
+                '<div class="tab1-titleTime"><span class="time-day">'+timeSplit[2]+'</span><span class="time-Ym">'+timeSplit[0]+'.'+timeSplit[1]+'</span>' +
+                '</div>'+
+                '<div class="tab1-titleText">'+newsList[i].titleText+'' +
+                '</div>'+
+                '</div>'+
+                '<div class="tab1-message">'+
+                '<div class="pic">'+
+                '<img src="'+newsList[i].picSrc+'" alt="">'+
+                '</div>'+
+                '<div class="text">'+
+                '<div class="text-content">'+maxTextContent+'' +
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>')
+        }
+    }
+
+
+
+
+
+    //选择日期
+    function selectMonths() {
+        $("#monthsBox").show();
+        setTimeout('$("#monthsBox").hide()', 5000)
+    }
+    function selectYears() {
+        $("#yearsBox").show();
+        setTimeout('$("#yearsBox").hide()', 5000);
+    }
+    $("#monthsBox div").bind("click", function () {
+        console.log(this);
+        $("#select-months").text($(this).text());
+        $("#monthsBox").hide()
+    });
+    $("#yearsBox div").bind("click", function () {
+        console.log(this);
+        $("#select-years").text($(this).text());
+        $("#yearsBox").hide()
+    })
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  color: #333;
+  font-size: 14px; }
+
+@font-face {
+  font-family: 'GABRIOLA';
+  src: url("../fonts/GABRIOLA.TTF") format("truetype"); }
+.fontG {
+  font-family: GABRIOLA; }
+
+body {
+  font-size: 14px;
+  color: white;
+  font-family: "San Fransico","Microsoft YaHei"; }
+
+fieldset, img {
+  border: 0; }
+
+ol, ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+em {
+  font-style: normal; }
+
+input, button, select, textarea {
+  outline: none;
+  font-family: "San Fransico","Microsoft YaHei"; }
+
+textarea {
+  resize: none; }
+
+p {
+  text-align: justify;
+  text-justify: distribute; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.positionR {
+  position: relative; }
+
+.displayIB {
+  display: inline-block; }
+
+.displayNone {
+  display: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*清除浮动代码*/
+.clearFloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0; }
+
+.clearFloat {
+  zoom: 1; }
+
+.clearBoth {
+  clear: both; }
+
+.textCenter {
+  text-align: center; }
+
+.textLeft {
+  text-align: left; }
+
+.textRight {
+  text-align: right; }
+
+.vm {
+  vertical-align: middle; }
+
+.wordEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+body {
+  min-width: 1230px; }
+
+.main-width {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 87px;
+  line-height: 83px;
+  overflow: hidden;
+  background-image: url("../images/header_bg.png");
+  background-repeat: repeat-x; }
+  .header-nav .header-content {
+    position: relative;
+    width: 1200px;
+    height: 83px;
+    margin: 0 auto; }
+    .header-nav .header-content .header-logo {
+      float: left;
+      padding: 10px 0; }
+      .header-nav .header-content .header-logo a {
+        display: inline-block;
+        width: 171px;
+        height: 53px;
+        background: url("../images/logo.png") no-repeat center; }
+    .header-nav .header-content ul {
+      float: right; }
+      .header-nav .header-content ul li {
+        float: left;
+        width: 100px;
+        text-align: center;
+        cursor: pointer; }
+        .header-nav .header-content ul li a {
+          width: 100%;
+          height: 100%;
+          display: inline-block; }
+          .header-nav .header-content ul li a.active, .header-nav .header-content ul li a:hover {
+            background-color: #060001;
+            color: white; }
+
+.header-height {
+  margin-top: 83px; }
+
+.survey {
+  background-color: #f4f5f8;
+  padding: 40px 0 50px; }
+  .survey .survey-content {
+    width: 1200px;
+    margin: 0 auto; }
+  .survey .list {
+    float: left;
+    width: 240px; }
+    .survey .list li {
+      font-size: 14px;
+      color: #999999;
+      margin-bottom: 5px; }
+    .survey .list li a {
+      font-size: 14px;
+      color: #999999;
+      display: inline-block; }
+      .survey .list li a:hover {
+        color: #333; }
+    .survey .list .title {
+      font-size: 16px;
+      color: #333333;
+      margin-bottom: 15px; }
+
+.footer {
+  background-color: #1f1f1f;
+  height: 82px; }
+  .footer .footer-content {
+    width: 1200px;
+    height: 82px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px; }
+    .footer .footer-content div {
+      color: #999;
+      line-height: 2; }
+
+.banner-title {
+  position: absolute;
+  top: 110px; }
+  .banner-title .chinese {
+    font-size: 44px;
+    color: #333333; }
+  .banner-title .english {
+    font-size: 24px;
+    color: #999999; }
+  .banner-title .borderLine {
+    width: 44px;
+    height: 2px;
+    background-color: #1a56c3;
+    margin: 5px 0; }
+
+/*# sourceMappingURL=common.css.map */

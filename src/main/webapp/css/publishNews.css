@@ -1,0 +1,129 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../images/login-bg.jpg") repeat; }
+  body .loginPage .login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0 3px 10px 3px #dddddd; }
+    body .loginPage .login .boxRow {
+      height: 40px;
+      margin-bottom: 20px; }
+      body .loginPage .login .boxRow div {
+        display: inline-block;
+        float: left; }
+      body .loginPage .login .boxRow .title {
+        width: 85px;
+        height: 40px;
+        line-height: 40px; }
+      body .loginPage .login .boxRow .inputBox {
+        width: 260px; }
+        body .loginPage .login .boxRow .inputBox input {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 10px;
+          background-color: transparent;
+          border: 1px solid #d2d2d2; }
+    body .loginPage .login .login-button {
+      text-align: center;
+      margin-bottom: 0px; }
+      body .loginPage .login .login-button button {
+        background-color: #1a56c3;
+        color: white;
+        font-size: 18px;
+        width: 178px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 auto; }
+        body .loginPage .login .login-button button:hover {
+          background-color: #1B5AE9; }
+  body .publishNewsPage {
+    position: relative;
+    height: 100%; }
+    body .publishNewsPage .publishNewsContent {
+      width: 1200px;
+      height: 100%;
+      background-color: #ffffff;
+      margin: 0 auto;
+      box-shadow: 0 3px 10px 3px #dddddd; }
+      body .publishNewsPage .publishNewsContent .publishNews-header {
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        height: 46px;
+        line-height: 46px;
+        background-color: #1f1f1f; }
+      body .publishNewsPage .publishNewsContent .publishNews-body {
+        padding: 20px; }
+        body .publishNewsPage .publishNewsContent .publishNews-body .publishType, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews {
+          width: 320px;
+          float: left; }
+          body .publishNewsPage .publishNewsContent .publishNews-body .publishType .title, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .title, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .title {
+            width: 80px;
+            height: 32px;
+            line-height: 32px;
+            float: left; }
+          body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box {
+            text-align: right;
+            position: relative;
+            vertical-align: middle;
+            margin-left: 15px;
+            cursor: pointer;
+            float: left; }
+            body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box .select-show, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box .select-show, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box .select-show {
+              height: 32px;
+              line-height: 32px;
+              border: 1px solid #d2d2d2;
+              color: #999999;
+              font-size: 14px;
+              text-align: left;
+              padding-left: 15px;
+              background: url("../images/news_arrow_down.png") no-repeat scroll right center; }
+            body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box .choose-type, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box .choose-type, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box .choose-type {
+              width: 110px; }
+            body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box .choose-box, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box .choose-box, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box .choose-box {
+              position: absolute;
+              z-index: 10000;
+              width: 100%;
+              text-align: center;
+              border: 1px solid #d2d2d2;
+              border-top: none;
+              background-color: white;
+              display: none; }
+              body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box .choose-box div, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box .choose-box div, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box .choose-box div {
+                color: #999999;
+                font-size: 14px;
+                padding: 5px 0; }
+                body .publishNewsPage .publishNewsContent .publishNews-body .publishType .select-box .choose-box div:hover, body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box .choose-box div:hover, body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .select-box .choose-box div:hover {
+                  background-color: #1a56c3;
+                  color: #ffffff; }
+        body .publishNewsPage .publishNewsContent .publishNews-body .publishTime {
+          margin-left: 30px; }
+          body .publishNewsPage .publishNewsContent .publishNews-body .publishTime .select-box input {
+            height: 32px;
+            line-height: 32px;
+            width: 200px;
+            color: #999999;
+            border: 1px solid #d2d2d2;
+            padding-left: 15px; }
+        body .publishNewsPage .publishNewsContent .publishNews-body .historyNews {
+          float: right; }
+          body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .title {
+            width: auto;
+            float: right;
+            cursor: pointer;
+            color: #0f43a2; }
+            body .publishNewsPage .publishNewsContent .publishNews-body .historyNews .title:hover {
+              color: #1B5AE9; }
+        body .publishNewsPage .publishNewsContent .publishNews-body .editorBox {
+          padding-top: 20px; }
+
+/*# sourceMappingURL=publishNews.css.map */

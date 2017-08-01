@@ -1,0 +1,70 @@
+.banner {
+  background: #f1f2f4; }
+  .banner .banner-content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+
+.case {
+  background-color: #ffffff;
+  padding: 80px 0 300px; }
+  .case .case-content {
+    width: 1200px;
+    margin: 0 auto; }
+    .case .case-content .case-box {
+      margin-bottom: 100px; }
+      .case .case-content .case-box .title-box {
+        position: relative; }
+        .case .case-content .case-box .title-box .title-number {
+          display: inline-block;
+          padding: 14px 20px 14px 8px;
+          background-color: #1f1f1f;
+          font-weight: bold; }
+          .case .case-content .case-box .title-box .title-number .title-number-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: white; }
+        .case .case-content .case-box .title-box .title-text {
+          position: absolute;
+          top: 8px;
+          left: 34px;
+          display: inline-block;
+          height: 48px;
+          line-height: 48px;
+          padding: 0 40px 0 40px;
+          background-color: #1a56c3;
+          color: white;
+          font-size: 18px; }
+      .case .case-content .case-box .case-main {
+        margin-top: 40px; }
+        .case .case-content .case-box .case-main .case-pic {
+          float: left;
+          width: 400px;
+          height: 294px; }
+          .case .case-content .case-box .case-main .case-pic img {
+            display: block; }
+        .case .case-content .case-box .case-main .case-message {
+          float: left;
+          width: 800px;
+          height: 294px;
+          padding: 30px; }
+          .case .case-content .case-box .case-main .case-message .case-title {
+            font-size: 20px;
+            color: #333333;
+            font-weight: bold; }
+          .case .case-content .case-box .case-main .case-message .case-title-s {
+            font-size: 18px;
+            color: #333333;
+            margin-top: 5px; }
+          .case .case-content .case-box .case-main .case-message .case-message-content {
+            font-size: 14px; }
+            .case .case-content .case-box .case-main .case-message .case-message-content p {
+              text-indent: 2em;
+              margin-top: 25px;
+              color: #999999; }
+
+/*# sourceMappingURL=case.css.map */

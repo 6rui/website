@@ -1,0 +1,293 @@
+.brief {
+  width: 100%;
+  height: 702px;
+  background: url("../images/about_jianjie_bg.png") repeat center;
+  background-attachment: fixed; }
+  .brief .brief-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 140px; }
+    .brief .brief-content .brief-title {
+      font-size: 36px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 100px; }
+    .brief .brief-content .brief-main .pic {
+      width: 582px;
+      height: 314px;
+      float: left; }
+      .brief .brief-content .brief-main .pic img {
+        width: 100%;
+        height: 100%; }
+    .brief .brief-content .brief-main .message {
+      float: left;
+      width: 618px;
+      height: 314px;
+      padding: 0 0 0 60px;
+      overflow: hidden;
+      position: relative; }
+      .brief .brief-content .brief-main .message:hover #dv_scroll_bar, .brief .brief-content .brief-main .message:hover #dv_scroll_bar .Scrollbar-Handle {
+        opacity: 100;
+        filter: Alpha(opacity=100); }
+      .brief .brief-content .brief-main .message p {
+        color: #ffffff;
+        font-size: 14px;
+        text-indent: 2em;
+        margin-bottom: 10px; }
+    .brief .brief-content .brief-main #dv_scroll {
+      width: 560px;
+      position: relative; }
+    .brief .brief-content .brief-main #dv_scroll .Scroller-Container {
+      width: 530px; }
+    .brief .brief-content .brief-main #dv_scroll_bar {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 14px;
+      height: 310px;
+      border-left: 1px solid #ffffff;
+      opacity: 0;
+      filter: Alpha(opacity=0); }
+    .brief .brief-content .brief-main #dv_scroll_bar .Scrollbar-Track {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 14px;
+      height: 270px; }
+    .brief .brief-content .brief-main #dv_scroll_bar .Scrollbar-Handle {
+      position: absolute;
+      left: -5px;
+      top: 0;
+      width: 9px;
+      height: 29px;
+      overflow: hidden;
+      background: #ffffff;
+      cursor: pointer;
+      opacity: 0;
+      filter: Alpha(opacity=0); }
+    .brief .brief-content .brief-main #dv_scroll_text {
+      position: absolute; }
+
+.team {
+  width: 100%;
+  height: 702px;
+  background: #ffffff; }
+  .team .team-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 140px; }
+    .team .team-content .team-title {
+      font-size: 36px;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 100px; }
+    .team .team-content .team-main .pic {
+      width: 455px;
+      height: 314px;
+      float: left; }
+      .team .team-content .team-main .pic img {
+        width: 100%;
+        height: 100%; }
+    .team .team-content .team-main .message {
+      float: left;
+      width: 745px;
+      padding: 100px 60px 0 0; }
+      .team .team-content .team-main .message p {
+        color: #333333;
+        font-size: 14px;
+        text-indent: 2em;
+        margin-bottom: 10px; }
+
+.contact {
+  width: 100%;
+  height: 718px;
+  background: url("../images/about_contact_bg.png") repeat center;
+  background-attachment: fixed; }
+  .contact .contact-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 140px; }
+    .contact .contact-content .contact-title {
+      font-size: 36px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 60px; }
+    .contact .contact-content .map {
+      position: relative;
+      width: 910px;
+      height: 479px;
+      background: url("../images/about_contact_map.png") no-repeat 50px center;
+      margin: 0 auto; }
+      .contact .contact-content .map div {
+        color: #ffffff;
+        font-size: 14px; }
+      .contact .contact-content .map .cityBoxRight .dot .dotBg {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: url("../images/dot.gif");
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/dot.gif', sizingMethod='scale'); }
+      .contact .contact-content .map .cityBoxRight .dot .dotAddress {
+        width: 100%;
+        position: relative;
+        top: 20px;
+        left: 2px;
+        text-align: left; }
+      .contact .contact-content .map .cityBoxRight .text-content {
+        width: 300px; }
+        .contact .contact-content .map .cityBoxRight .text-content .addressBox .line {
+          position: absolute;
+          top: 14px;
+          left: 19px;
+          width: 0;
+          border-bottom: 1px solid #ffffff; }
+        .contact .contact-content .map .cityBoxRight .text-content .addressBox .line-text {
+          position: absolute;
+          top: -10px;
+          left: 19px;
+          width: 100%;
+          text-align: right;
+          opacity: 0;
+          filter: Alpha(opacity=0); }
+      .contact .contact-content .map .bj-box {
+        position: absolute;
+        left: 470px;
+        top: 165px; }
+        .contact .contact-content .map .bj-box .text-content {
+          width: 300px;
+          overflow: hidden; }
+          .contact .contact-content .map .bj-box .text-content .addressBox .line {
+            position: absolute;
+            top: 14px;
+            left: 19px; }
+          .contact .contact-content .map .bj-box .text-content .addressBox .line-text {
+            position: absolute;
+            top: -10px;
+            left: 19px; }
+      .contact .contact-content .map .hz-box {
+        position: absolute;
+        left: 537px;
+        top: 303px; }
+        .contact .contact-content .map .hz-box .text-content {
+          width: 350px; }
+          .contact .contact-content .map .hz-box .text-content .addressBox .line {
+            position: absolute;
+            top: 14px;
+            left: 19px; }
+          .contact .contact-content .map .hz-box .text-content .addressBox .line-text {
+            position: absolute;
+            top: -10px;
+            left: 19px; }
+          .contact .contact-content .map .hz-box .text-content .phoneBox {
+            position: absolute;
+            left: 69px;
+            top: 14px;
+            width: 0px;
+            height: 46px;
+            border-bottom: 1px solid #ffffff;
+            text-align: right; }
+            .contact .contact-content .map .hz-box .text-content .phoneBox .lineV {
+              width: 1px;
+              height: 0px;
+              float: left;
+              border-left: 1px solid #ffffff; }
+            .contact .contact-content .map .hz-box .text-content .phoneBox .line-text {
+              padding-top: 20px;
+              height: 26px;
+              opacity: 0;
+              filter: Alpha(opacity=0); }
+      .contact .contact-content .map .sz-box {
+        position: absolute;
+        left: 465px;
+        top: 400px; }
+        .contact .contact-content .map .sz-box .text-content {
+          width: 300px; }
+          .contact .contact-content .map .sz-box .text-content .addressBox .line {
+            position: absolute;
+            top: 14px;
+            left: 19px; }
+          .contact .contact-content .map .sz-box .text-content .addressBox .line-text {
+            position: absolute;
+            top: -10px;
+            left: 19px; }
+          .contact .contact-content .map .sz-box .text-content .phoneBox {
+            position: absolute;
+            left: 69px;
+            top: 14px;
+            width: 0px;
+            height: 46px;
+            border-bottom: 1px solid #ffffff;
+            text-align: right; }
+            .contact .contact-content .map .sz-box .text-content .phoneBox .lineV {
+              width: 1px;
+              height: 0px;
+              float: left;
+              border-left: 1px solid #ffffff; }
+            .contact .contact-content .map .sz-box .text-content .phoneBox .line-text {
+              padding-top: 20px;
+              height: 26px;
+              opacity: 0;
+              filter: Alpha(opacity=0); }
+      .contact .contact-content .map .cd-box {
+        position: absolute;
+        right: 525px;
+        top: 300px; }
+        .contact .contact-content .map .cd-box .dot .dotBg {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border-radius: 50% 50%;
+          background: url("../images/dot.gif");
+          background-size: 100% 100%;
+          -moz-background-size: 100% 100%;
+          -o-background-size: 100% 100%;
+          -webkit-background-size: 100% 100%;
+          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/dot.gif', sizingMethod='scale'); }
+        .contact .contact-content .map .cd-box .dot .dotAddress {
+          width: 100%;
+          position: relative;
+          top: 20px;
+          left: 2px;
+          text-align: left; }
+        .contact .contact-content .map .cd-box .text-content {
+          position: absolute;
+          right: 0;
+          width: 350px; }
+          .contact .contact-content .map .cd-box .text-content .addressBox .line {
+            position: absolute;
+            top: -4px;
+            right: 17px;
+            width: 0;
+            border-bottom: 1px solid #ffffff; }
+          .contact .contact-content .map .cd-box .text-content .addressBox .line-text {
+            position: absolute;
+            top: -28px;
+            right: 17px;
+            width: 100%;
+            text-align: left;
+            opacity: 0;
+            filter: Alpha(opacity=0); }
+          .contact .contact-content .map .cd-box .text-content .phoneBox {
+            position: absolute;
+            right: 67px;
+            top: -4px;
+            width: 0px;
+            height: 46px;
+            border-bottom: 1px solid #ffffff;
+            text-align: left; }
+            .contact .contact-content .map .cd-box .text-content .phoneBox .lineV {
+              width: 1px;
+              height: 0px;
+              float: right;
+              border-right: 1px solid #ffffff; }
+            .contact .contact-content .map .cd-box .text-content .phoneBox .line-text {
+              padding-top: 20px;
+              height: 26px;
+              opacity: 0;
+              filter: Alpha(opacity=0); }
+
+/*# sourceMappingURL=aboutUs.css.map */

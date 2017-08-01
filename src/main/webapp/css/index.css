@@ -1,0 +1,264 @@
+@charset "UTF-8";
+.bannerBox {
+  background: url("../images/banner_img.png") no-repeat center;
+  height: 100%;
+  width: 100%;
+  background-size: 100% auto; }
+
+.banner {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #070a17; }
+  .banner img {
+    height: 100%;
+    display: block;
+    margin: 0 auto; }
+
+.aboutUs {
+  background-color: white;
+  padding: 55px 0px; }
+  .aboutUs .aboutUs-content {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px; }
+    .aboutUs .aboutUs-content .about-pic {
+      width: 614px; }
+      .aboutUs .aboutUs-content .about-pic .aboutBox {
+        float: left; }
+      .aboutUs .aboutUs-content .about-pic .aboutBox1 {
+        margin-right: 3px; }
+      .aboutUs .aboutUs-content .about-pic .aboutBox-title {
+        height: 130px;
+        background-color: #0f43a2;
+        width: 224px;
+        margin-bottom: 3px; }
+        .aboutUs .aboutUs-content .about-pic .aboutBox-title a {
+          width: 100%;
+          height: 100%;
+          display: inline-block; }
+        .aboutUs .aboutUs-content .about-pic .aboutBox-title .aboutBoxTitleContent {
+          width: 96px;
+          margin: 32px auto; }
+          .aboutUs .aboutUs-content .about-pic .aboutBox-title .aboutBoxTitleContent .chinese {
+            font-size: 24px;
+            color: white; }
+          .aboutUs .aboutUs-content .about-pic .aboutBox-title .aboutBoxTitleContent .english {
+            font-size: 16px;
+            font-weight: lighter;
+            color: white; }
+          .aboutUs .aboutUs-content .about-pic .aboutBox-title .aboutBoxTitleContent .theLine {
+            width: 30px;
+            border-bottom: 2px solid #ffffff;
+            margin-top: 15px; }
+    .aboutUs .aboutUs-content .aboutUs-message {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 588px;
+      float: right;
+      padding: 60px 0 0 60px;
+      line-height: 1.5; }
+      .aboutUs .aboutUs-content .aboutUs-message p {
+        text-indent: 2em;
+        margin-bottom: 10px; }
+
+.indexTitle {
+  padding-top: 46px; }
+  .indexTitle .chinese {
+    font-size: 28px; }
+  .indexTitle .english {
+    font-size: 18px;
+    font-weight: lighter; }
+  .indexTitle .borderLine {
+    border-bottom: 2px solid #1a56c3;
+    margin-top: 6px;
+    width: 28px; }
+
+.coreProduct {
+  background-color: #f4f5f8; }
+  .coreProduct .coreProduct-content {
+    width: 1200px;
+    height: 620px;
+    margin: 0 auto; }
+    .coreProduct .coreProduct-content .swiper-container {
+      height: 500px;
+      width: 1200px; }
+    .coreProduct .coreProduct-content .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; }
+    .coreProduct .coreProduct-content .swiper-slide {
+      background-color: #f4f5f8; }
+      .coreProduct .coreProduct-content .swiper-slide .picture {
+        margin-right: 90px; }
+      .coreProduct .coreProduct-content .swiper-slide .message {
+        width: 510px;
+        text-align: left; }
+        .coreProduct .coreProduct-content .swiper-slide .message .productName {
+          font-size: 24px; }
+        .coreProduct .coreProduct-content .swiper-slide .message .productMessage {
+          font-size: 14px;
+          text-indent: 2em;
+          margin-top: 30px; }
+        .coreProduct .coreProduct-content .swiper-slide .message .productMore {
+          border: 1px solid #333333;
+          display: inline-block;
+          width: 132px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          margin-top: 40px;
+          cursor: pointer; }
+          .coreProduct .coreProduct-content .swiper-slide .message .productMore .arrowRight {
+            background: url("../images/index_arrow.png") no-repeat;
+            width: 0;
+            height: 9px;
+            margin-left: 0px;
+            display: inline-block;
+            overflow-x: hidden;
+            transition: all .5s;
+            -moz-transition: all .5s;
+            /* Firefox 4 */
+            -webkit-transition: all .5s;
+            /* Safari 和 Chrome */
+            -o-transition: all .5s;
+            /* Opera */ }
+          .coreProduct .coreProduct-content .swiper-slide .message .productMore:hover .arrowRight {
+            width: 18px;
+            margin-left: 15px; }
+
+.news {
+  background-color: #ffffff; }
+  .news .news-content {
+    width: 1200px;
+    height: 540px;
+    margin: 0 auto; }
+    .news .news-content .newsBox {
+      margin-top: 35px; }
+      .news .news-content .newsBox .newsLeft {
+        width: 301px;
+        height: 320px;
+        border: 1px solid #dcdcdc;
+        float: left;
+        padding: 10px; }
+        .news .news-content .newsBox .newsLeft img {
+          width: 281px;
+          height: 300px; }
+      .news .news-content .newsBox .newsCenter {
+        float: left;
+        width: 410px;
+        margin: 90px 44px; }
+        .news .news-content .newsBox .newsCenter .title {
+          font-size: 16px;
+          font-weight: bold;
+          display: block; }
+        .news .news-content .newsBox .newsCenter .message {
+          font-size: 14px;
+          color: #999999;
+          margin-top: 25px; }
+      .news .news-content .newsBox .newsRight {
+        float: left; }
+        .news .news-content .newsBox .newsRight .newsList {
+          width: 400px;
+          height: 100px;
+          background-color: #f4f5f8;
+          margin-bottom: 10px;
+          padding: 26px 0;
+          cursor: pointer;
+          transition: all .3s;
+          -moz-transition: all .3s;
+          /* Firefox 4 */
+          -webkit-transition: all .3s;
+          /* Safari 和 Chrome */
+          -o-transition: all .3s;
+          /* Opera */ }
+          .news .news-content .newsBox .newsRight .newsList:hover {
+            background-color: #1a56c3; }
+          .news .news-content .newsBox .newsRight .newsList:hover .time .yearM, .news .news-content .newsBox .newsRight .newsList:hover .time .date, .news .news-content .newsBox .newsRight .newsList:hover .newTitle {
+            color: white; }
+          .news .news-content .newsBox .newsRight .newsList.active {
+            background-color: #1a56c3; }
+          .news .news-content .newsBox .newsRight .newsList.active .time .yearM, .news .news-content .newsBox .newsRight .newsList.active .time .date, .news .news-content .newsBox .newsRight .newsList.active .newTitle {
+            color: white; }
+          .news .news-content .newsBox .newsRight .newsList .time {
+            width: 88px;
+            height: 46px;
+            border-right: 1px solid #dcdcdc;
+            text-align: center;
+            float: left; }
+            .news .news-content .newsBox .newsRight .newsList .time .yearM {
+              font-size: 12px;
+              color: #1a56c3; }
+            .news .news-content .newsBox .newsRight .newsList .time .date {
+              font-size: 28px;
+              color: #1a56c3; }
+          .news .news-content .newsBox .newsRight .newsList .newTitle {
+            width: 305px;
+            padding: 0 28px;
+            float: left;
+            color: #666666; }
+
+.partner-header {
+  background-color: #f4f5f8;
+  height: 194px;
+  padding-top: 84px; }
+  .partner-header .partner-header-content {
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center; }
+    .partner-header .partner-header-content .title1 {
+      font-size: 24px;
+      color: #333333;
+      padding-top: 30px; }
+    .partner-header .partner-header-content .title2 {
+      font-size: 16px;
+      color: #333333;
+      font-weight: lighter;
+      padding-top: 10px; }
+    .partner-header .partner-header-content .borderLine {
+      border-bottom: 3px solid #1a56c3;
+      width: 28px;
+      margin: 16px auto 0; }
+
+.partner {
+  background-color: #ffffff;
+  padding-bottom: 170px; }
+  .partner .partner-content {
+    width: 1201px;
+    margin: 47px auto 0;
+    border-left: 1px solid #f4f5f8;
+    border-top: 1px solid #f4f5f8; }
+    .partner .partner-content .partnerBox {
+      width: 200px;
+      height: 122px;
+      border-right: 1px solid #f4f5f8;
+      border-bottom: 1px solid #f4f5f8;
+      float: left;
+      overflow: hidden;
+      text-align: center; }
+      .partner .partner-content .partnerBox span {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; }
+      .partner .partner-content .partnerBox img {
+        display: inline-block;
+        vertical-align: middle; }
+
+/*# sourceMappingURL=index.css.map */

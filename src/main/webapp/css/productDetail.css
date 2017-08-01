@@ -1,0 +1,135 @@
+.sort-nav {
+  width: 100%;
+  height: 59px;
+  background-color: #ffffff;
+  position: relative; }
+  .sort-nav .sort-showBox {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    top: 0px;
+    z-index: 2; }
+  .sort-nav .sort-content {
+    width: 1200px;
+    margin: 0 auto; }
+    .sort-nav .sort-content .sortName {
+      float: left;
+      color: #666666; }
+    .sort-nav .sort-content .sortType {
+      float: right;
+      padding-right: 22px;
+      cursor: pointer;
+      color: #666666; }
+    .sort-nav .sort-content .show-sortType {
+      background: url("../images/product_menu.png") no-repeat right 3px; }
+    .sort-nav .sort-content .close-sortType {
+      background: url("../images/product_menu.png") no-repeat right -14px;
+      color: #333; }
+  .sort-nav .sortBox {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    top: -20px;
+    z-index: 1; }
+    .sort-nav .sortBox .sortBox-content {
+      width: 1200px;
+      text-align: right;
+      margin: 0 auto; }
+      .sort-nav .sortBox .sortBox-content a {
+        color: #999;
+        margin-left: 50px; }
+        .sort-nav .sortBox .sortBox-content a:hover, .sort-nav .sortBox .sortBox-content a.active {
+          color: #333333; }
+
+.product-banner {
+  background-color: #f1f2f4;
+  padding: 80px 0; }
+  .product-banner .product-banner-content {
+    width: 1200px;
+    margin: 0 auto; }
+    .product-banner .product-banner-content .picture {
+      margin-right: 90px; }
+    .product-banner .product-banner-content .message {
+      width: 500px;
+      text-align: left;
+      padding-top: 90px; }
+      .product-banner .product-banner-content .message .productName {
+        font-size: 44px; }
+      .product-banner .product-banner-content .message .productName-english {
+        font-size: 20px;
+        margin-top: 5px; }
+      .product-banner .product-banner-content .message .productMessage {
+        font-size: 16px;
+        text-indent: 2em;
+        margin-top: 30px;
+        color: #666666; }
+
+.productTitle {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.product-intro {
+  background-color: white; }
+  .product-intro .product-intro-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px; }
+    .product-intro .product-intro-content .message {
+      font-size: 14px;
+      text-indent: 2em; }
+
+.product-function {
+  background-color: #f4f5f8;
+  padding: 80px; }
+  .product-function .product-function-content {
+    width: 1200px;
+    margin: 0 auto; }
+    .product-function .product-function-content .swiper-slide {
+      width: 240px;
+      background-color: #f4f5f8;
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      margin: 0 auto; }
+    .product-function .product-function-content .iconBox {
+      padding-top: 74px;
+      color: #666666;
+      font-size: 16px; }
+    .product-function .product-function-content .slide-switch {
+      margin-top: 70px;
+      text-align: center; }
+      .product-function .product-function-content .slide-switch .slidePrev {
+        width: 20px;
+        height: 34px;
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+        background: url("../images/arrow_left.png") no-repeat center top; }
+        .product-function .product-function-content .slide-switch .slidePrev:hover {
+          background: url("../images/arrow_left.png") no-repeat center bottom; }
+      .product-function .product-function-content .slide-switch .slideNext {
+        width: 20px;
+        height: 34px;
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+        background: url("../images/arrow_right.png") no-repeat center top; }
+        .product-function .product-function-content .slide-switch .slideNext:hover {
+          background: url("../images/arrow_right.png") no-repeat center bottom; }
+
+/*# sourceMappingURL=productDetail.css.map */
